@@ -37,13 +37,13 @@ available_setting = {
     "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",  # 人格描述
     "conversation_max_tokens": 1000,  # 支持上下文记忆的最多字符数
     # chatgpt限流配置
-    "rate_limit_chatgpt": 20,  # chatgpt的调用频率限制
+    "rate_limit_chatgpt": 10,  # chatgpt的调用频率限制
     "rate_limit_dalle": 50,  # openai dalle的调用频率限制
     # chatgpt api参数 参考https://platform.openai.com/docs/api-reference/chat/create
     "temperature": 0.9,
     "top_p": 1,
-    "frequency_penalty": 0,
-    "presence_penalty": 0,
+    "frequency_penalty": 0.1,
+    "presence_penalty": 0.1,
     "request_timeout": 60,  # chatgpt请求超时时间，openai接口默认设置为600，对于难问题一般需要较长时间
     "timeout": 120,  # chatgpt重试超时时间，在这个时间内，将会自动重试
     # 语音设置
